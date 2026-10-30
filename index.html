@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Una Noche, Dos Ciudades — Invitación Privada</title>
+<meta name="description" content="Una invitación privada a una sinfonía exclusiva, entregada por Mapache Mapachoso.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="curtain-shadow-left" aria-hidden="true"></div>
+<div class="curtain-shadow-right" aria-hidden="true"></div>
+
+<main id="app">
+
+  <!-- ===================== ESCENA 1 — LA ENTREGA ===================== -->
+  <section id="scene-stage" class="scene is-active" aria-label="Escena: la entrega de la invitación">
+    <div class="stage">
+      <div class="spotlight" aria-hidden="true"></div>
+      <div class="curtain curtain--left" aria-hidden="true">
+        <div class="curtain-fold"></div><div class="curtain-fold"></div><div class="curtain-fold"></div><div class="curtain-fold"></div>
+      </div>
+      <div class="curtain curtain--right" aria-hidden="true">
+        <div class="curtain-fold"></div><div class="curtain-fold"></div><div class="curtain-fold"></div><div class="curtain-fold"></div>
+      </div>
+      <div class="curtain-swag" aria-hidden="true"></div>
+
+      <div class="stage-floor" aria-hidden="true"></div>
+
+      <div class="dust-motes" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div id="mapache-stage-wrap" class="mapache-stage-wrap">
+        <!-- Personaje: Mapache Mapachoso, director de orquesta -->
+        <svg id="mapache-svg" class="mapache-svg" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapache Mapachoso vestido de director de orquesta">
+          <defs>
+            <radialGradient id="furShade" cx="40%" cy="30%" r="75%">
+              <stop offset="0%" stop-color="#b9bfc9"/>
+              <stop offset="100%" stop-color="#8891a0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- cola -->
+          <g id="tail">
+            <path d="M 185,215 Q 255,210 268,150 Q 276,100 250,70 Q 265,105 252,140 Q 240,185 178,196 Z" fill="url(#furShade)" stroke="#3d4350" stroke-width="5"/>
+            <path d="M 256,86 L 240,118" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
+            <path d="M 263,122 L 245,152" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
+            <path d="M 258,160 L 236,184" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
+          </g>
+
+          <!-- faldones del frac (detras del cuerpo) -->
+          <g id="coattails">
+            <path d="M 112,222 Q 100,268 82,298 Q 108,290 122,256 Z" fill="#14151c" stroke="#05060a" stroke-width="3"/>
+            <path d="M 188,222 Q 202,268 220,296 Q 194,288 180,256 Z" fill="#14151c" stroke="#05060a" stroke-width="3"/>
+          </g>
+
+          <!-- patas -->
+          <g id="feet">
+            <ellipse cx="128" cy="300" rx="19" ry="11" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+            <ellipse cx="172" cy="300" rx="19" ry="11" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+          </g>
+
+          <!-- cuerpo -->
+          <g id="body-group">
+            <ellipse cx="150" cy="235" rx="58" ry="62" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
+
+            <!-- frac negro -->
+            <path d="M 150,180 C 115,182 95,205 94,240 C 93,268 104,290 122,296 L 132,236 L 150,296 L 168,236 L 178,296 C 196,290 207,268 206,240 C 205,205 185,182 150,180 Z" fill="#111219" stroke="#05060a" stroke-width="5"/>
+
+            <!-- camisa blanca -->
+            <path d="M 150,188 L 134,214 L 150,232 L 166,214 Z" fill="#f7f4ea"/>
+            <path d="M 150,232 L 141,296 L 159,296 Z" fill="#f7f4ea"/>
+
+            <!-- moño dorado -->
+            <g id="bowtie">
+              <path d="M 150,212 L 128,200 L 128,224 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2.5"/>
+              <path d="M 150,212 L 172,200 L 172,224 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2.5"/>
+              <circle cx="150" cy="212" r="6.5" fill="#e8c788" stroke="#8a6a32" stroke-width="2"/>
+            </g>
+
+            <!-- solapas -->
+            <path d="M 150,188 L 136,216 L 148,232 Z" fill="#05060a"/>
+            <path d="M 150,188 L 164,216 L 152,232 Z" fill="#05060a"/>
+
+            <!-- brazo izquierdo: sostiene el sobre -->
+            <g id="arm-envelope">
+              <path d="M 108,206 Q 86,222 80,252 Q 78,266 88,272" fill="none" stroke="#111219" stroke-width="20" stroke-linecap="round"/>
+              <circle cx="88" cy="272" r="13" fill="url(#furShade)" stroke="#3d4350" stroke-width="4"/>
+            </g>
+
+            <!-- brazo derecho: batuta -->
+            <g id="arm-baton">
+              <path d="M 192,206 Q 216,214 228,196" fill="none" stroke="#111219" stroke-width="20" stroke-linecap="round"/>
+              <circle cx="228" cy="196" r="13" fill="url(#furShade)" stroke="#3d4350" stroke-width="4"/>
+              <g id="baton">
+                <line x1="231" y1="190" x2="268" y2="150" stroke="#e8d7b0" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="268" cy="150" r="4.5" fill="#cda45e"/>
+              </g>
+            </g>
+
+            <!-- cabeza -->
+            <g id="head">
+              <path d="M 108,120 L 88,76 L 134,96 Z" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 106,112 L 94,84 L 126,97 Z" fill="#e9c9dd"/>
+              <path d="M 192,120 L 212,76 L 166,96 Z" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 194,112 L 206,84 L 174,97 Z" fill="#e9c9dd"/>
+
+              <ellipse cx="150" cy="142" rx="72" ry="58" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
+
+              <!-- mascara -->
+              <path d="M 80,138 Q 80,110 150,122 Q 220,110 220,138 Q 220,172 150,154 Q 80,172 80,138 Z" fill="#2e3340"/>
+              <ellipse cx="150" cy="160" rx="38" ry="27" fill="#f3f1e9"/>
+
+              <g id="eyes-group">
+                <circle cx="120" cy="137" r="12.5" fill="#15161c"/><circle cx="116.5" cy="132.5" r="4" fill="#fff"/>
+                <circle cx="180" cy="137" r="12.5" fill="#15161c"/><circle cx="176.5" cy="132.5" r="4" fill="#fff"/>
+              </g>
+
+              <ellipse cx="150" cy="156" rx="8" ry="6" fill="#15161c"/>
+              <path id="mouth-smile" d="M 137,170 Q 150,182 163,170" fill="none" stroke="#15161c" stroke-width="4" stroke-linecap="round"/>
+
+              <!-- sombrero de copa -->
+              <g id="top-hat">
+                <ellipse cx="150" cy="96" rx="46" ry="10" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+                <path d="M 118,96 L 122,42 Q 150,32 178,42 L 182,96 Z" fill="#111219" stroke="#05060a" stroke-width="3"/>
+                <rect x="119" y="78" width="62" height="12" fill="#cda45e"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+
+        <!-- Sobre que sostiene / entrega -->
+        <div id="envelope" class="envelope" role="button" tabindex="0" aria-label="Recibir invitación">
+          <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" class="envelope-svg">
+            <rect x="4" y="4" width="152" height="102" rx="4" fill="#f3efe1" stroke="#b7893f" stroke-width="2.5"/>
+            <path d="M 4,8 L 80,66 L 156,8" fill="none" stroke="#b7893f" stroke-width="2.5"/>
+            <path id="envelope-flap" d="M 4,8 L 80,60 L 156,8 L 156,6 Q 156,4 154,4 L 6,4 Q 4,4 4,6 Z" fill="#e9e2cb" stroke="#b7893f" stroke-width="2.5"/>
+            <circle id="wax-seal" cx="80" cy="52" r="15" fill="#8a1f1f" stroke="#5c1212" stroke-width="1.5"/>
+            <text x="80" y="57" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="14" fill="#e8c788" font-weight="600">MM</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="stage-text">
+        <p id="greeting-line" class="greeting-line">«Buenas noches, señorita Jazz.<br>Tengo algo muy especial para usted…»</p>
+        <button id="btn-receive" class="btn-gold" type="button">Recibir invitación</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ESCENA 2 — LA INVITACIÓN ===================== -->
+  <section id="scene-invitation" class="scene" aria-label="Escena: la invitación revelada">
+    <div class="invitation-backdrop">
+      <div class="gold-motes" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div id="card" class="card">
+        <div class="card-ornament card-ornament--tl" aria-hidden="true"></div>
+        <div class="card-ornament card-ornament--tr" aria-hidden="true"></div>
+        <div class="card-ornament card-ornament--bl" aria-hidden="true"></div>
+        <div class="card-ornament card-ornament--br" aria-hidden="true"></div>
+
+        <div class="card-inner">
+          <p class="reveal-line title-eyebrow" data-delay="0">Con especial distinción, se invita a</p>
+          <h1 class="reveal-line card-title" data-delay="1">Una Noche,<br>Dos Ciudades</h1>
+          <p class="reveal-line card-subtitle" data-delay="2">An exclusive private symphony</p>
+
+          <div class="divider" aria-hidden="true"><span></span><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="#cda45e"/></svg><span></span></div>
+
+          <p class="reveal-line invitee-label" data-delay="3">Para</p>
+          <p class="reveal-line invitee-name" data-delay="4">Jazz Jazz Jazz,<br>Mi Rapi Jazz</p>
+
+          <p class="reveal-line card-body" data-delay="5">A una velada musical muy especial, preparada especialmente para usted y Marcus.</p>
+
+          <div class="reveal-line field-block field-block--note" data-delay="6">
+            <span class="field-label">Fecha</span>
+            <p class="handwritten-note">Jazz jazz jazz, mi rapi Jazz<br>debe elegir qué sábado.</p>
+          </div>
+
+          <div class="reveal-line field-block" data-delay="7">
+            <span class="field-label">Código de vestimenta</span>
+            <p class="field-value field-value--emphasis">FORMAL ATTIRE REQUIRED</p>
+            <p class="field-value field-value--small">Se ruega asistir elegantemente vestida para la ocasión. ¡Queremos una noche de gala!</p>
+          </div>
+
+          <div class="reveal-line field-block" data-delay="8">
+            <span class="field-label">Ubicación</span>
+            <p class="field-value">Ciudad de México × Lake Villa, Illinois</p>
+          </div>
+
+          <div class="reveal-line field-block" data-delay="9">
+            <span class="field-label">Anfitrión</span>
+            <p class="field-value">Mapache Mapachoso</p>
+          </div>
+
+          <div class="divider" aria-hidden="true"><span></span><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="#cda45e"/></svg><span></span></div>
+
+          <p class="reveal-line card-honour" data-delay="10">«Será un honor contar con su distinguida presencia»</p>
+
+          <div class="reveal-line card-signature" data-delay="11">
+            <p>Con cariño,</p>
+            <p class="signature-name">Mapache Mapachoso &amp; Marcus</p>
+          </div>
+
+          <div class="reveal-line card-seal" data-delay="12" aria-hidden="true">
+            <svg viewBox="0 0 70 70" width="56" height="56">
+              <circle cx="35" cy="35" r="32" fill="#8a1f1f" stroke="#5c1212" stroke-width="1.5"/>
+              <circle cx="35" cy="35" r="26" fill="none" stroke="#c99a52" stroke-width="1"/>
+              <text x="35" y="43" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="22" fill="#e8c788" font-weight="600">MM</text>
+            </svg>
+          </div>
+
+          <button id="btn-continue" class="btn-gold btn-gold--small reveal-line" data-delay="13" type="button">Cerrar la invitación</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ESCENA 3 — DESPEDIDA ===================== -->
+  <section id="scene-farewell" class="scene" aria-label="Escena final">
+    <div class="farewell-stage">
+      <div class="spotlight spotlight--soft" aria-hidden="true"></div>
+
+      <div id="mapache-farewell-wrap" class="mapache-farewell-wrap">
+        <svg class="mapache-svg mapache-svg--small" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapache Mapachoso haciendo una reverencia">
+          <defs>
+            <radialGradient id="furShade2" cx="40%" cy="30%" r="75%">
+              <stop offset="0%" stop-color="#b9bfc9"/>
+              <stop offset="100%" stop-color="#8891a0"/>
+            </radialGradient>
+          </defs>
+          <g id="tail-f">
+            <path d="M 185,215 Q 255,210 268,150 Q 276,100 250,70 Q 265,105 252,140 Q 240,185 178,196 Z" fill="url(#furShade2)" stroke="#3d4350" stroke-width="5"/>
+            <path d="M 256,86 L 240,118" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
+            <path d="M 263,122 L 245,152" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
+            <path d="M 258,160 L 236,184" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
+          </g>
+          <g id="coattails-f">
+            <path d="M 112,222 Q 100,268 82,298 Q 108,290 122,256 Z" fill="#14151c" stroke="#05060a" stroke-width="3"/>
+            <path d="M 188,222 Q 202,268 220,296 Q 194,288 180,256 Z" fill="#14151c" stroke="#05060a" stroke-width="3"/>
+          </g>
+          <g id="feet-f">
+            <ellipse cx="128" cy="300" rx="19" ry="11" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+            <ellipse cx="172" cy="300" rx="19" ry="11" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+          </g>
+          <g id="body-group-f">
+            <ellipse cx="150" cy="235" rx="58" ry="62" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
+            <path d="M 150,180 C 115,182 95,205 94,240 C 93,268 104,290 122,296 L 132,236 L 150,296 L 168,236 L 178,296 C 196,290 207,268 206,240 C 205,205 185,182 150,180 Z" fill="#111219" stroke="#05060a" stroke-width="5"/>
+            <path d="M 150,188 L 134,214 L 150,232 L 166,214 Z" fill="#f7f4ea"/>
+            <path d="M 150,232 L 141,296 L 159,296 Z" fill="#f7f4ea"/>
+            <g>
+              <path d="M 150,212 L 128,200 L 128,224 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2.5"/>
+              <path d="M 150,212 L 172,200 L 172,224 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2.5"/>
+              <circle cx="150" cy="212" r="6.5" fill="#e8c788" stroke="#8a6a32" stroke-width="2"/>
+            </g>
+            <path d="M 150,188 L 136,216 L 148,232 Z" fill="#05060a"/>
+            <path d="M 150,188 L 164,216 L 152,232 Z" fill="#05060a"/>
+            <g id="arm-envelope-f">
+              <path d="M 108,206 Q 86,222 80,252 Q 78,266 88,272" fill="none" stroke="#111219" stroke-width="20" stroke-linecap="round"/>
+              <circle cx="88" cy="272" r="13" fill="url(#furShade2)" stroke="#3d4350" stroke-width="4"/>
+            </g>
+            <g id="arm-baton-f">
+              <path d="M 192,206 Q 216,214 228,196" fill="none" stroke="#111219" stroke-width="20" stroke-linecap="round"/>
+              <circle cx="228" cy="196" r="13" fill="url(#furShade2)" stroke="#3d4350" stroke-width="4"/>
+              <g>
+                <line x1="231" y1="190" x2="268" y2="150" stroke="#e8d7b0" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="268" cy="150" r="4.5" fill="#cda45e"/>
+              </g>
+            </g>
+            <g id="head-f">
+              <path d="M 108,120 L 88,76 L 134,96 Z" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 106,112 L 94,84 L 126,97 Z" fill="#e9c9dd"/>
+              <path d="M 192,120 L 212,76 L 166,96 Z" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 194,112 L 206,84 L 174,97 Z" fill="#e9c9dd"/>
+              <ellipse cx="150" cy="142" rx="72" ry="58" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 80,138 Q 80,110 150,122 Q 220,110 220,138 Q 220,172 150,154 Q 80,172 80,138 Z" fill="#2e3340"/>
+              <ellipse cx="150" cy="160" rx="38" ry="27" fill="#f3f1e9"/>
+              <g>
+                <circle cx="120" cy="137" r="12.5" fill="#15161c"/><circle cx="116.5" cy="132.5" r="4" fill="#fff"/>
+                <circle cx="180" cy="137" r="12.5" fill="#15161c"/><circle cx="176.5" cy="132.5" r="4" fill="#fff"/>
+              </g>
+              <ellipse cx="150" cy="156" rx="8" ry="6" fill="#15161c"/>
+              <path d="M 137,170 Q 150,182 163,170" fill="none" stroke="#15161c" stroke-width="4" stroke-linecap="round"/>
+              <g>
+                <ellipse cx="150" cy="96" rx="46" ry="10" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+                <path d="M 118,96 L 122,42 Q 150,32 178,42 L 182,96 Z" fill="#111219" stroke="#05060a" stroke-width="3"/>
+                <rect x="119" y="78" width="62" height="12" fill="#cda45e"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="farewell-text">
+        <p class="farewell-line">«Esperamos contar con su presencia, señorita Jazz.»</p>
+        <p class="farewell-signature">MAPACHE MAPACHOSO</p>
+        <p class="farewell-sub">Your presence would be an honour.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
