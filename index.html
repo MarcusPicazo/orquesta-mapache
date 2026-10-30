@@ -38,98 +38,97 @@
 
       <div id="mapache-stage-wrap" class="mapache-stage-wrap">
         <!-- Personaje: Mapache Mapachoso, director de orquesta -->
-        <svg id="mapache-svg" class="mapache-svg" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapache Mapachoso vestido de director de orquesta">
+        <svg id="mapache-svg" class="mapache-svg" viewBox="10 -30 270 235" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapache Mapachoso vestido de director de orquesta">
           <defs>
             <radialGradient id="furShade" cx="40%" cy="30%" r="75%">
               <stop offset="0%" stop-color="#b9bfc9"/>
               <stop offset="100%" stop-color="#8891a0"/>
             </radialGradient>
+            <clipPath id="tail-clip"><path d="M 130,150 Q 240,200 270,70 C 200,40 150,10 110,80 L 120,120 Z"/></clipPath>
           </defs>
 
-          <!-- cola -->
+          <!-- cola: diseno original del mapache (anillos claro/oscuro) -->
           <g id="tail">
-            <path d="M 185,215 Q 255,210 268,150 Q 276,100 250,70 Q 265,105 252,140 Q 240,185 178,196 Z" fill="url(#furShade)" stroke="#3d4350" stroke-width="5"/>
-            <path d="M 256,86 L 240,118" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
-            <path d="M 263,122 L 245,152" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
-            <path d="M 258,160 L 236,184" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
+            <path d="M 130,150 Q 240,200 270,70 C 200,40 150,10 110,80 L 120,120 Z" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
+            <g clip-path="url(#tail-clip)">
+              <path d="M 155,105 L 195,165" stroke="#2e3340" stroke-width="22" stroke-linecap="round"/>
+              <path d="M 185,75 L 230,135" stroke="#2e3340" stroke-width="22" stroke-linecap="round"/>
+              <path d="M 215,50 L 255,105" stroke="#2e3340" stroke-width="20" stroke-linecap="round"/>
+            </g>
           </g>
 
-          <!-- faldones del frac (detras del cuerpo) -->
-          <g id="coattails">
-            <path d="M 112,222 Q 100,268 82,298 Q 108,290 122,256 Z" fill="#14151c" stroke="#05060a" stroke-width="3"/>
-            <path d="M 188,222 Q 202,268 220,296 Q 194,288 180,256 Z" fill="#14151c" stroke="#05060a" stroke-width="3"/>
-          </g>
-
-          <!-- patas -->
+          <!-- patas: diseno original -->
           <g id="feet">
-            <ellipse cx="128" cy="300" rx="19" ry="11" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
-            <ellipse cx="172" cy="300" rx="19" ry="11" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+            <ellipse cx="74" cy="187" rx="21" ry="12" fill="#7b8494" stroke="#3d4350" stroke-width="4"/>
+            <ellipse cx="74" cy="180" rx="15" ry="9" fill="#9ca3af"/>
+            <ellipse cx="126" cy="187" rx="21" ry="12" fill="#7b8494" stroke="#3d4350" stroke-width="4"/>
+            <ellipse cx="126" cy="180" rx="15" ry="9" fill="#9ca3af"/>
           </g>
 
-          <!-- cuerpo -->
+          <!-- cuerpo: diseno original -->
           <g id="body-group">
-            <ellipse cx="150" cy="235" rx="58" ry="62" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
+            <ellipse cx="100" cy="135" rx="55" ry="50" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
 
-            <!-- frac negro -->
-            <path d="M 150,180 C 115,182 95,205 94,240 C 93,268 104,290 122,296 L 132,236 L 150,296 L 168,236 L 178,296 C 196,290 207,268 206,240 C 205,205 185,182 150,180 Z" fill="#111219" stroke="#05060a" stroke-width="5"/>
+            <!-- frac negro (nuevo atuendo de director) -->
+            <path d="M 100,92 C 78,94 62,112 60,140 C 59,158 65,172 76,178 L 82,138 L 100,178 L 118,138 L 124,178 C 135,172 141,158 140,140 C 138,112 122,94 100,92 Z" fill="#111219" stroke="#05060a" stroke-width="5"/>
 
             <!-- camisa blanca -->
-            <path d="M 150,188 L 134,214 L 150,232 L 166,214 Z" fill="#f7f4ea"/>
-            <path d="M 150,232 L 141,296 L 159,296 Z" fill="#f7f4ea"/>
+            <path d="M 100,92 L 88,112 L 100,126 L 112,112 Z" fill="#f7f4ea"/>
+            <path d="M 100,126 L 94,178 L 106,178 Z" fill="#f7f4ea"/>
+
+            <!-- solapas -->
+            <path d="M 100,92 L 90,113 L 98,126 Z" fill="#05060a"/>
+            <path d="M 100,92 L 110,113 L 102,126 Z" fill="#05060a"/>
 
             <!-- moño dorado -->
             <g id="bowtie">
-              <path d="M 150,212 L 128,200 L 128,224 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2.5"/>
-              <path d="M 150,212 L 172,200 L 172,224 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2.5"/>
-              <circle cx="150" cy="212" r="6.5" fill="#e8c788" stroke="#8a6a32" stroke-width="2"/>
+              <path d="M 100,104 L 84,96 L 84,113 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2"/>
+              <path d="M 100,104 L 116,96 L 116,113 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2"/>
+              <circle cx="100" cy="104" r="5.5" fill="#e8c788" stroke="#8a6a32" stroke-width="1.6"/>
             </g>
-
-            <!-- solapas -->
-            <path d="M 150,188 L 136,216 L 148,232 Z" fill="#05060a"/>
-            <path d="M 150,188 L 164,216 L 152,232 Z" fill="#05060a"/>
 
             <!-- brazo izquierdo: sostiene el sobre -->
             <g id="arm-envelope">
-              <path d="M 108,206 Q 86,222 80,252 Q 78,266 88,272" fill="none" stroke="#111219" stroke-width="20" stroke-linecap="round"/>
-              <circle cx="88" cy="272" r="13" fill="url(#furShade)" stroke="#3d4350" stroke-width="4"/>
+              <path d="M 58,127 Q 40,146 42,172" fill="none" stroke="#111219" stroke-width="13" stroke-linecap="round"/>
+              <circle cx="42" cy="172" r="9.5" fill="url(#furShade)" stroke="#3d4350" stroke-width="3.5"/>
             </g>
 
             <!-- brazo derecho: batuta -->
             <g id="arm-baton">
-              <path d="M 192,206 Q 216,214 228,196" fill="none" stroke="#111219" stroke-width="20" stroke-linecap="round"/>
-              <circle cx="228" cy="196" r="13" fill="url(#furShade)" stroke="#3d4350" stroke-width="4"/>
+              <path d="M 142,127 Q 162,121 173,105" fill="none" stroke="#111219" stroke-width="13" stroke-linecap="round"/>
+              <circle cx="173" cy="105" r="9.5" fill="url(#furShade)" stroke="#3d4350" stroke-width="3.5"/>
               <g id="baton">
-                <line x1="231" y1="190" x2="268" y2="150" stroke="#e8d7b0" stroke-width="4" stroke-linecap="round"/>
-                <circle cx="268" cy="150" r="4.5" fill="#cda45e"/>
+                <line x1="176" y1="100" x2="204" y2="73" stroke="#e8d7b0" stroke-width="3.5" stroke-linecap="round"/>
+                <circle cx="204" cy="73" r="4" fill="#cda45e"/>
               </g>
             </g>
 
-            <!-- cabeza -->
+            <!-- cabeza: diseno original (orejas, mascara, ojos) -->
             <g id="head">
-              <path d="M 108,120 L 88,76 L 134,96 Z" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
-              <path d="M 106,112 L 94,84 L 126,97 Z" fill="#e9c9dd"/>
-              <path d="M 192,120 L 212,76 L 166,96 Z" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
-              <path d="M 194,112 L 206,84 L 174,97 Z" fill="#e9c9dd"/>
+              <path d="M 40,50 L 20,10 L 75,30 Z" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 38,42 L 25,18 L 65,30 Z" fill="#fbcfe8"/>
+              <path d="M 160,50 L 180,10 L 125,30 Z" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 162,42 L 175,18 L 135,30 Z" fill="#fbcfe8"/>
 
-              <ellipse cx="150" cy="142" rx="72" ry="58" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
+              <ellipse cx="100" cy="75" rx="70" ry="52" fill="url(#furShade)" stroke="#3d4350" stroke-width="6"/>
 
-              <!-- mascara -->
-              <path d="M 80,138 Q 80,110 150,122 Q 220,110 220,138 Q 220,172 150,154 Q 80,172 80,138 Z" fill="#2e3340"/>
-              <ellipse cx="150" cy="160" rx="38" ry="27" fill="#f3f1e9"/>
+              <!-- antifaz -->
+              <path d="M 30,75 L 30,45 Q 100,60 170,45 L 170,75 Q 170,105 100,85 Q 30,105 30,75 Z" fill="#3d4350"/>
+              <ellipse cx="100" cy="98" rx="35" ry="25" fill="#f3f1e9"/>
 
               <g id="eyes-group">
-                <circle cx="120" cy="137" r="12.5" fill="#15161c"/><circle cx="116.5" cy="132.5" r="4" fill="#fff"/>
-                <circle cx="180" cy="137" r="12.5" fill="#15161c"/><circle cx="176.5" cy="132.5" r="4" fill="#fff"/>
+                <circle cx="65" cy="72" r="12" fill="#15161c"/><circle cx="62" cy="68" r="4" fill="#fff"/>
+                <circle cx="135" cy="72" r="12" fill="#15161c"/><circle cx="132" cy="68" r="4" fill="#fff"/>
               </g>
 
-              <ellipse cx="150" cy="156" rx="8" ry="6" fill="#15161c"/>
-              <path id="mouth-smile" d="M 137,170 Q 150,182 163,170" fill="none" stroke="#15161c" stroke-width="4" stroke-linecap="round"/>
+              <ellipse cx="100" cy="90" rx="8" ry="6" fill="#15161c"/>
+              <path id="mouth-smile" d="M 88,105 Q 100,118 112,105" fill="none" stroke="#15161c" stroke-width="4" stroke-linecap="round"/>
 
-              <!-- sombrero de copa -->
+              <!-- sombrero de copa (nuevo atuendo de director) -->
               <g id="top-hat">
-                <ellipse cx="150" cy="96" rx="46" ry="10" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
-                <path d="M 118,96 L 122,42 Q 150,32 178,42 L 182,96 Z" fill="#111219" stroke="#05060a" stroke-width="3"/>
-                <rect x="119" y="78" width="62" height="12" fill="#cda45e"/>
+                <ellipse cx="100" cy="30" rx="44" ry="8" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+                <path d="M 70,30 L 73,-15 Q 100,-24 127,-15 L 130,30 Z" fill="#111219" stroke="#05060a" stroke-width="3"/>
+                <rect x="71" y="11" width="58" height="11" fill="#cda45e"/>
               </g>
             </g>
           </g>
@@ -217,7 +216,7 @@
             </svg>
           </div>
 
-          <button id="btn-continue" class="btn-gold btn-gold--small reveal-line" data-delay="13" type="button">Cerrar la invitación</button>
+          <button id="btn-continue" class="btn-gold btn-gold--small btn-gold--on-light reveal-line" data-delay="13" type="button">Cerrar la invitación</button>
         </div>
       </div>
     </div>
@@ -229,69 +228,70 @@
       <div class="spotlight spotlight--soft" aria-hidden="true"></div>
 
       <div id="mapache-farewell-wrap" class="mapache-farewell-wrap">
-        <svg class="mapache-svg mapache-svg--small" viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapache Mapachoso haciendo una reverencia">
+        <svg class="mapache-svg mapache-svg--small" viewBox="10 -30 270 235" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapache Mapachoso haciendo una reverencia">
           <defs>
             <radialGradient id="furShade2" cx="40%" cy="30%" r="75%">
               <stop offset="0%" stop-color="#b9bfc9"/>
               <stop offset="100%" stop-color="#8891a0"/>
             </radialGradient>
+            <clipPath id="tail-clip-f"><path d="M 130,150 Q 240,200 270,70 C 200,40 150,10 110,80 L 120,120 Z"/></clipPath>
           </defs>
           <g id="tail-f">
-            <path d="M 185,215 Q 255,210 268,150 Q 276,100 250,70 Q 265,105 252,140 Q 240,185 178,196 Z" fill="url(#furShade2)" stroke="#3d4350" stroke-width="5"/>
-            <path d="M 256,86 L 240,118" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
-            <path d="M 263,122 L 245,152" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
-            <path d="M 258,160 L 236,184" stroke="#3d4350" stroke-width="13" stroke-linecap="round"/>
-          </g>
-          <g id="coattails-f">
-            <path d="M 112,222 Q 100,268 82,298 Q 108,290 122,256 Z" fill="#14151c" stroke="#05060a" stroke-width="3"/>
-            <path d="M 188,222 Q 202,268 220,296 Q 194,288 180,256 Z" fill="#14151c" stroke="#05060a" stroke-width="3"/>
+            <path d="M 130,150 Q 240,200 270,70 C 200,40 150,10 110,80 L 120,120 Z" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
+            <g clip-path="url(#tail-clip-f)">
+              <path d="M 155,105 L 195,165" stroke="#2e3340" stroke-width="22" stroke-linecap="round"/>
+              <path d="M 185,75 L 230,135" stroke="#2e3340" stroke-width="22" stroke-linecap="round"/>
+              <path d="M 215,50 L 255,105" stroke="#2e3340" stroke-width="20" stroke-linecap="round"/>
+            </g>
           </g>
           <g id="feet-f">
-            <ellipse cx="128" cy="300" rx="19" ry="11" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
-            <ellipse cx="172" cy="300" rx="19" ry="11" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+            <ellipse cx="74" cy="187" rx="21" ry="12" fill="#7b8494" stroke="#3d4350" stroke-width="4"/>
+            <ellipse cx="74" cy="180" rx="15" ry="9" fill="#9ca3af"/>
+            <ellipse cx="126" cy="187" rx="21" ry="12" fill="#7b8494" stroke="#3d4350" stroke-width="4"/>
+            <ellipse cx="126" cy="180" rx="15" ry="9" fill="#9ca3af"/>
           </g>
           <g id="body-group-f">
-            <ellipse cx="150" cy="235" rx="58" ry="62" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
-            <path d="M 150,180 C 115,182 95,205 94,240 C 93,268 104,290 122,296 L 132,236 L 150,296 L 168,236 L 178,296 C 196,290 207,268 206,240 C 205,205 185,182 150,180 Z" fill="#111219" stroke="#05060a" stroke-width="5"/>
-            <path d="M 150,188 L 134,214 L 150,232 L 166,214 Z" fill="#f7f4ea"/>
-            <path d="M 150,232 L 141,296 L 159,296 Z" fill="#f7f4ea"/>
+            <ellipse cx="100" cy="135" rx="55" ry="50" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
+            <path d="M 100,92 C 78,94 62,112 60,140 C 59,158 65,172 76,178 L 82,138 L 100,178 L 118,138 L 124,178 C 135,172 141,158 140,140 C 138,112 122,94 100,92 Z" fill="#111219" stroke="#05060a" stroke-width="5"/>
+            <path d="M 100,92 L 88,112 L 100,126 L 112,112 Z" fill="#f7f4ea"/>
+            <path d="M 100,126 L 94,178 L 106,178 Z" fill="#f7f4ea"/>
+            <path d="M 100,92 L 90,113 L 98,126 Z" fill="#05060a"/>
+            <path d="M 100,92 L 110,113 L 102,126 Z" fill="#05060a"/>
             <g>
-              <path d="M 150,212 L 128,200 L 128,224 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2.5"/>
-              <path d="M 150,212 L 172,200 L 172,224 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2.5"/>
-              <circle cx="150" cy="212" r="6.5" fill="#e8c788" stroke="#8a6a32" stroke-width="2"/>
+              <path d="M 100,104 L 84,96 L 84,113 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2"/>
+              <path d="M 100,104 L 116,96 L 116,113 Z" fill="#cda45e" stroke="#8a6a32" stroke-width="2"/>
+              <circle cx="100" cy="104" r="5.5" fill="#e8c788" stroke="#8a6a32" stroke-width="1.6"/>
             </g>
-            <path d="M 150,188 L 136,216 L 148,232 Z" fill="#05060a"/>
-            <path d="M 150,188 L 164,216 L 152,232 Z" fill="#05060a"/>
             <g id="arm-envelope-f">
-              <path d="M 108,206 Q 86,222 80,252 Q 78,266 88,272" fill="none" stroke="#111219" stroke-width="20" stroke-linecap="round"/>
-              <circle cx="88" cy="272" r="13" fill="url(#furShade2)" stroke="#3d4350" stroke-width="4"/>
+              <path d="M 58,127 Q 40,146 42,172" fill="none" stroke="#111219" stroke-width="13" stroke-linecap="round"/>
+              <circle cx="42" cy="172" r="9.5" fill="url(#furShade2)" stroke="#3d4350" stroke-width="3.5"/>
             </g>
             <g id="arm-baton-f">
-              <path d="M 192,206 Q 216,214 228,196" fill="none" stroke="#111219" stroke-width="20" stroke-linecap="round"/>
-              <circle cx="228" cy="196" r="13" fill="url(#furShade2)" stroke="#3d4350" stroke-width="4"/>
+              <path d="M 142,127 Q 162,121 173,105" fill="none" stroke="#111219" stroke-width="13" stroke-linecap="round"/>
+              <circle cx="173" cy="105" r="9.5" fill="url(#furShade2)" stroke="#3d4350" stroke-width="3.5"/>
               <g>
-                <line x1="231" y1="190" x2="268" y2="150" stroke="#e8d7b0" stroke-width="4" stroke-linecap="round"/>
-                <circle cx="268" cy="150" r="4.5" fill="#cda45e"/>
+                <line x1="176" y1="100" x2="204" y2="73" stroke="#e8d7b0" stroke-width="3.5" stroke-linecap="round"/>
+                <circle cx="204" cy="73" r="4" fill="#cda45e"/>
               </g>
             </g>
             <g id="head-f">
-              <path d="M 108,120 L 88,76 L 134,96 Z" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
-              <path d="M 106,112 L 94,84 L 126,97 Z" fill="#e9c9dd"/>
-              <path d="M 192,120 L 212,76 L 166,96 Z" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
-              <path d="M 194,112 L 206,84 L 174,97 Z" fill="#e9c9dd"/>
-              <ellipse cx="150" cy="142" rx="72" ry="58" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
-              <path d="M 80,138 Q 80,110 150,122 Q 220,110 220,138 Q 220,172 150,154 Q 80,172 80,138 Z" fill="#2e3340"/>
-              <ellipse cx="150" cy="160" rx="38" ry="27" fill="#f3f1e9"/>
+              <path d="M 40,50 L 20,10 L 75,30 Z" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 38,42 L 25,18 L 65,30 Z" fill="#fbcfe8"/>
+              <path d="M 160,50 L 180,10 L 125,30 Z" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 162,42 L 175,18 L 135,30 Z" fill="#fbcfe8"/>
+              <ellipse cx="100" cy="75" rx="70" ry="52" fill="url(#furShade2)" stroke="#3d4350" stroke-width="6"/>
+              <path d="M 30,75 L 30,45 Q 100,60 170,45 L 170,75 Q 170,105 100,85 Q 30,105 30,75 Z" fill="#3d4350"/>
+              <ellipse cx="100" cy="98" rx="35" ry="25" fill="#f3f1e9"/>
               <g>
-                <circle cx="120" cy="137" r="12.5" fill="#15161c"/><circle cx="116.5" cy="132.5" r="4" fill="#fff"/>
-                <circle cx="180" cy="137" r="12.5" fill="#15161c"/><circle cx="176.5" cy="132.5" r="4" fill="#fff"/>
+                <circle cx="65" cy="72" r="12" fill="#15161c"/><circle cx="62" cy="68" r="4" fill="#fff"/>
+                <circle cx="135" cy="72" r="12" fill="#15161c"/><circle cx="132" cy="68" r="4" fill="#fff"/>
               </g>
-              <ellipse cx="150" cy="156" rx="8" ry="6" fill="#15161c"/>
-              <path d="M 137,170 Q 150,182 163,170" fill="none" stroke="#15161c" stroke-width="4" stroke-linecap="round"/>
+              <ellipse cx="100" cy="90" rx="8" ry="6" fill="#15161c"/>
+              <path d="M 88,105 Q 100,118 112,105" fill="none" stroke="#15161c" stroke-width="4" stroke-linecap="round"/>
               <g>
-                <ellipse cx="150" cy="96" rx="46" ry="10" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
-                <path d="M 118,96 L 122,42 Q 150,32 178,42 L 182,96 Z" fill="#111219" stroke="#05060a" stroke-width="3"/>
-                <rect x="119" y="78" width="62" height="12" fill="#cda45e"/>
+                <ellipse cx="100" cy="30" rx="44" ry="8" fill="#0c0d12" stroke="#05060a" stroke-width="3"/>
+                <path d="M 70,30 L 73,-15 Q 100,-24 127,-15 L 130,30 Z" fill="#111219" stroke="#05060a" stroke-width="3"/>
+                <rect x="71" y="11" width="58" height="11" fill="#cda45e"/>
               </g>
             </g>
           </g>

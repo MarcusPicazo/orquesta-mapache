@@ -195,8 +195,8 @@ button { font-family: inherit; }
 /* Mapache — escenario */
 .mapache-stage-wrap {
   position: relative;
-  width: clamp(190px, 44vw, 320px);
-  aspect-ratio: 300 / 340;
+  width: clamp(220px, 48vw, 340px);
+  aspect-ratio: 270 / 235;
   margin: 0 auto;
   z-index: 5;
   animation: mapacheEnter 2.1s var(--ease-soft) both;
@@ -215,9 +215,8 @@ button { font-family: inherit; }
 .mapache-svg { width: 100%; height: 100%; display: block; filter: drop-shadow(0 18px 24px rgba(0,0,0,.55)); }
 .mapache-svg--small { filter: drop-shadow(0 14px 18px rgba(0,0,0,.5)); }
 
-#body-group {
-  transform-box: fill-box;
-  transform-origin: 50% 100%;
+#body-group, #body-group-f {
+  transform-origin: 100px 185px;
   animation: breathe 2.6s ease-in-out infinite alternate;
   animation-delay: 2.6s;
 }
@@ -226,9 +225,8 @@ button { font-family: inherit; }
   100% { transform: scaleY(1.018); }
 }
 
-#tail {
-  transform-box: fill-box;
-  transform-origin: 20% 90%;
+#tail, #tail-f {
+  transform-origin: 122px 142px;
   animation: tailSway 3.4s ease-in-out infinite alternate;
   animation-delay: 2.6s;
 }
@@ -237,9 +235,8 @@ button { font-family: inherit; }
   100% { transform: rotate(4deg); }
 }
 
-#arm-baton {
-  transform-box: fill-box;
-  transform-origin: 78% 58%;
+#arm-baton, #arm-baton-f {
+  transform-origin: 142px 127px;
 }
 
 .mapache-stage-wrap.is-bowing #body-group {
@@ -264,8 +261,8 @@ button { font-family: inherit; }
 /* sobre */
 .envelope {
   position: absolute;
-  left: 29%;
-  top: 79%;
+  left: 12%;
+  top: 86%;
   width: clamp(64px, 17vw, 108px);
   transform: translate(-50%, -45%) rotate(-7deg);
   cursor: pointer;
@@ -348,6 +345,17 @@ button { font-family: inherit; }
 .btn-gold:active { transform: scale(.97); }
 
 .btn-gold--small { font-size: clamp(.7rem, 2.3vw, .8rem); padding: .8em 1.7em; }
+
+.btn-gold--on-light {
+  color: var(--navy);
+  border-color: var(--gold);
+  background: linear-gradient(180deg, rgba(205,164,94,.16), rgba(205,164,94,.05));
+  box-shadow: 0 2px 10px rgba(110,24,24,.08);
+}
+.btn-gold--on-light:hover {
+  background: linear-gradient(180deg, rgba(205,164,94,.32), rgba(205,164,94,.14));
+  box-shadow: 0 0 0 1px var(--gold), 0 4px 16px rgba(110,24,24,.12);
+}
 
 @keyframes lineFadeUp {
   0% { opacity: 0; transform: translateY(14px); }
@@ -576,21 +584,17 @@ button { font-family: inherit; }
 
 .mapache-farewell-wrap {
   position: relative;
-  width: clamp(160px, 38vw, 260px);
-  aspect-ratio: 300 / 340;
+  width: clamp(190px, 42vw, 300px);
+  aspect-ratio: 270 / 235;
   opacity: 0;
   animation: lineFadeUp 1s var(--ease-soft) both;
   animation-delay: .2s;
 }
 
 .mapache-farewell-wrap.is-bowing #body-group-f {
-  transform-box: fill-box;
-  transform-origin: 50% 100%;
   animation: bowBody 1.9s var(--ease-soft) .4s both;
 }
 .mapache-farewell-wrap.is-bowing #arm-baton-f {
-  transform-box: fill-box;
-  transform-origin: 78% 58%;
   animation: bowBaton 1.9s var(--ease-soft) .4s both;
 }
 
@@ -641,5 +645,5 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 380px) {
-  .mapache-stage-wrap { width: clamp(170px, 50vw, 240px); }
+  .mapache-stage-wrap { width: clamp(190px, 56vw, 260px); }
 }
